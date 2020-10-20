@@ -32,11 +32,10 @@ const categoriesSample = [
 
 
 const Categories = props => {
-    const [categories, setCategories] = useState(categoriesSample);
 
     return (
         <div className="Categories">
-            {categories.map(category =>  
+            {categoriesSample.map(category =>  
                 <NavLink 
                     className="Category"
                     key={category.name}
